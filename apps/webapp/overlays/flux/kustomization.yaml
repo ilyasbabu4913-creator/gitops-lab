@@ -3,3 +3,7 @@ kind: Kustomization
 namespace: webapp-flux
 resources:
   - ../../base
+  - namespace.yaml
+replicas:
+  - name: webapp
+    count: 3

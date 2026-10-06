@@ -3,3 +3,7 @@ kind: Kustomization
 namespace: webapp-argocd
 resources:
   - ../../base
+  - namespace.yaml
+replicas:
+  - name: webapp
+    count: 2
